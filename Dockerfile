@@ -3,4 +3,6 @@ MAINTAINER Yoni B
 WORKDIR /usr/app
 COPY . .
 RUN npm install
+ENV ENVIRONMENT PRODUCTION
+ARG DEVOPS-LEVEL HARD
 CMD ["node", "index.js"]
