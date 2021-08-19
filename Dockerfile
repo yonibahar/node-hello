@@ -5,4 +5,4 @@ COPY . .
 RUN npm install
 ENV ENVIRONMENT PRODUCTION
 ARG DEVOPS-LEVEL HARD
-CMD ["node", "index.js"]
+ENTYPOINT [ "node", "index.js" ]
